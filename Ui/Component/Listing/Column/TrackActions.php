@@ -69,7 +69,7 @@ class TrackActions extends Column
             if (! key_exists(ShippingStatus::NAME, $item)) {
                 throw new LocalizedException(
                     __(
-                        'Note that the installation of the extension was not successful. Some columns have not been added to the database. The installation should be reversed. Use the following command to reinstall the module: DELETE FROM `setup_module` WHERE `setup_module`.`module` = \'MyParcelNL_Magento\''
+                        'Note that the installation of the extension was not successful. Some columns have not been added to the database. The installation should be reversed. Use the following command to reinstall the module: DELETE FROM `setup_module` WHERE `setup_module`.`module` = \'MyParcelBE_Magento\''
                     )
                 );
                 continue;

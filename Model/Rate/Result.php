@@ -7,11 +7,11 @@ declare(strict_types=1);
  * It is available through the world-wide-web at this URL:
  * http://creativecommons.org/licenses/by-nc-nd/3.0/nl/deed.en_US
  * If you want to add improvements, please create a fork in our GitHub:
- * https://github.com/myparcelnl/magento
+ * https://github.com/myparcelbe/magento
  *
  * @author      Reindert Vetter <info@sendmyparcel.be>
  * @license     http://creativecommons.org/licenses/by-nc-nd/3.0/nl/deed.en_US  CC BY-NC-ND 3.0 NL
- * @link        https://github.com/myparcelnl/magento
+ * @link        https://github.com/myparcelbe/magento
  * @copyright   2010-2019 MyParcel
  * @since       File available since Release 2.0.0
  */
@@ -355,7 +355,7 @@ class Result extends \Magento\Shipping\Model\Rate\Result
         $basePrice  = $this->myParcelHelper->getBasePrice();
         $settingFee = 0;
 
-        // Explode settingPath like: myparcelnl_magento_postnl_settings/delivery/only_recipient/signature
+        // Explode settingPath like: myparcelbe_magento_postnl_settings/delivery/only_recipient/signature
         $settingPath    = explode('/', $settingPath ?? '');
 
         // Check if the selected delivery options are delivery, only_recipient and signature

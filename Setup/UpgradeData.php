@@ -6,12 +6,12 @@ declare(strict_types=1);
  * Update data for update
  *
  * If you want to add improvements, please create a fork in our GitHub:
- * https://github.com/myparcelnl
+ * https://github.com/myparcelbe
  *
  * @author      Richard Perdaan <info@sendmyparcel.be>
  * @copyright   2010-2019 MyParcel
  * @license     http://creativecommons.org/licenses/by-nc-nd/3.0/nl/deed.en_US  CC BY-NC-ND 3.0 NL
- * @link        https://github.com/myparcelnl/magento
+ * @link        https://github.com/myparcelbe/magento
  * @since       File available since Release v3.0.0
  */
 
@@ -372,7 +372,7 @@ class UpgradeData implements UpgradeDataInterface
 
             if ($connection->isTableExists($table) == true) {
 
-                // Move shipping_methods to myparcelnl_magento_general
+                // Move shipping_methods to myparcelbe_magento_general
                 $selectShippingMethodSettings = $connection->select()->from(
                     $table,
                     ['config_id', 'path', 'value']
@@ -496,7 +496,7 @@ class UpgradeData implements UpgradeDataInterface
                     $connection->update($table, $bind, $where);
                 }
 
-                // Move myparcelnl_magento_checkout to myparcelnl_magento_postnl_settings
+                // Move myparcelbe_magento_checkout to myparcelbe_magento_postnl_settings
                 $selectCheckoutSettings = $connection->select()->from(
                     $table,
                     ['config_id', 'path', 'value']
